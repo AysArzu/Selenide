@@ -1,0 +1,48 @@
+Selenide Selenium Webdriverdan turetilen bir web otomasyon framework'udur.
+Selenide ve Selenium ozellikleri ayn iframework'te birlikte kullanilabilir.
+Selenide dependency eklendiginde selenium ozellikleri de framework'e otomatik olarak eklenmektedir.
+
+Selenide is a framework for test automation powered by Selenium WebDriver that brings the following advantages:
+-Concise fluent API for tests
+-Stable tests
+-Powerful selectors
+-Simple configuration
+You don't need to think how to shut down browser,
+handle timeouts and StaleElement Exceptions or search for relevant log lines,
+debugging your tests.
+
+      <<<<< ***** OUR DEPENDENCIES *****>>>>>
+  <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>7.12.1</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>7.12.1</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
+    <dependency>
+        <groupId>com.codeborne</groupId>
+        <artifactId>selenide</artifactId>
+        <version>6.15.0</version>
+    </dependency>
+
+Bir sayfadaki web elementler Locators ile bulunur.
+Selenide framework'unde selenide ya da selenium locatorsler kullanilabilir.
+En yaygin locatorslar id, name, xpath, css dir.
+NOTE:css kullanmak selenide de cok kolaydir.
+
+*$ karakteri tek bir web element bulmak icin kullanilir.
+*$ karakteri SelenideElement objesi return eder.
+
+*$$ Birden fazla element bulmak icin kullanilir.
+$$ karakteri List<SelenideElement> objesi return eder.
+$$ karakteri ElementCollection objesi return eder.
+
+Note: If a Selenide assertion fails, a screenshot is automatically taken and saved to the build file.!!!
