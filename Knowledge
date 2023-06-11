@@ -46,3 +46,20 @@ $$ karakteri List<SelenideElement> objesi return eder.
 $$ karakteri ElementCollection objesi return eder.
 
 Note: If a Selenide assertion fails, a screenshot is automatically taken and saved to the build file.!!!
+
+$("input").shouldBe(visible);-->elementin sayfada gorunurlugunu assert eder
+$("input").should(exit); --> elementin sayfade var olup olmadigini assert eder
+$("input").shouldHave(text("Some text"));metnin bir parcasinin icerilip icerilmedigini kontrol eder
+$("input").shoulHave(exactText("Some text"));-->tam metinin sayfada oldugunu kontrol eder
+$("input").shoulNotHave(exactText("Some text"));-->tam metnin sayfada olmadigini kontrol eder
+
+
+*checkboxElement.shouldNot(checked);
+*checkboxElement.should.click();
+*checkboxElement.should(checked);
+
+*year.selectOption(1);//2. element by index
+*year.selectOption("2023");//by visible text
+*year.selectOptionByValue("2023");//by value
+
+
